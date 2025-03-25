@@ -1,6 +1,6 @@
 <p align="center">
   <h1 align="center">Laravel API Helpers 🚀</h1>
-  <p align="center">**Laravel API Helpers** is a collection of helper functions designed to streamline API development with Laravel. It enables you to easily detect API versions, validate requests, and access useful request details—all while keeping your code clean and maintainable. ✨</p>
+  <p align="center"> Laravel API Helpers is a collection of helper functions designed to streamline API development with Laravel. It enables you to easily detect API versions, validate requests, and access useful request details—all while keeping your code clean and maintainable. ✨</p>
 
   <p align="center">
     <a href="https://packagist.org/packages/omaralalwi/laravel-api-helpers">
@@ -11,9 +11,6 @@
     </a>
     <a href="LICENSE.md">
       <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="License">
-    </a>
-    <a href="https://github.com/omaralalwi/laravel-api-helpers/actions">
-      <img src="https://img.shields.io/github/actions/workflow/status/omaralalwi/laravel-api-helpers/tests.yml" alt="Tests Status">
     </a>
   </p>
 
