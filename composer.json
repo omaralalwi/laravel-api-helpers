@@ -82,10 +82,7 @@
         "laravel": {
             "providers": [
                 "Omaralalwi\\LaravelApiHelpers\\LaravelApiHelpersServiceProvider"
-            ],
-            "aliases": {
-                "LaravelApiHelpers": "Omaralalwi\\LaravelApiHelpers\\LaravelApiHelpersFacade"
-            }
+            ]
         }
     }
 }
