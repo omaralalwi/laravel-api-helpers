@@ -200,6 +200,34 @@ $apiUser = get_api_user();
 echo $apiUser ? "API User: {$apiUser->name}" : "No API user authenticated.";
 ```
 
+### Comprehensive Example For All Functions
+
+copy & past following block, then see outputs in log file
+
+```php
+$apiHelpers = [
+    'API Version'             => get_api_v(),
+    'Is API v3?'              => is_api_v(3),
+    'API Version At Least 4?' => api_v_at_least(4),
+    'Is API Request?'         => is_api_request(),
+    'Client IP'               => get_client_ip(),
+    'Request Locale'          => get_request_locale(),
+    'Request Token'           => get_request_token(),
+    'Request Content-Type'    => get_request_content_type(),
+    'Is Secure Request?'      => is_secure_request(),
+    'Request Headers'         => json_encode(get_request_headers()),
+    'Is API Authenticated?'   => is_api_authenticated(),
+    'Authenticated User'      => optional(get_auth_user())->name ?? 'No Authenticated User',
+    'API Authenticated User'  => optional(get_api_user())->name ?? 'No API User Authenticated',
+];
+
+\Log::info('API Helper Functions Test:');
+
+foreach ($apiHelpers as $key => $value) {
+    \Log::info("{$key}: " . (is_array($value) ? json_encode($value) : $value));
+}
+```
+
 ---
 
 ## Changelog
