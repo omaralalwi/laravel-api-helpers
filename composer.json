@@ -1,0 +1,91 @@
+{
+    "name": "omaralalwi/laravel-api-helpers",
+    "description": "collection of helpful helper functions for API Requests .",
+    "keywords": [
+        "laravel-api-helpers",
+        "laravel",
+        "api",
+        "rest-api",
+        "api-tools",
+        "api-development",
+        "api-versioning",
+        "semantic-versioning",
+        "versioning",
+        "request-helpers",
+        "http-requests",
+        "request-handling",
+        "api-authentication",
+        "bearer-authentication",
+        "security-headers",
+        "ip-detection",
+        "localization",
+        "internationalization",
+        "i18n",
+        "api-middleware",
+        "developer-tools",
+        "api-response",
+        "json-response",
+        "restful-api",
+        "php-package",
+        "laravel-package",
+        "laravel-utilities",
+        "laravel-developer",
+        "laravel-development",
+        "api-security",
+        "client-ip",
+        "content-negotiation",
+        "header-parsing",
+        "bearer-token",
+        "api-user-management"
+    ],
+    "homepage": "https://github.com/omaralalwi/laravel-api-helpers",
+    "license": "MIT",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "omar alalwi",
+            "email": "omaralwi2010@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omaralalwi\\LaravelApiHelpers\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omaralalwi\\LaravelApiHelpers\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Omaralalwi\\LaravelApiHelpers\\LaravelApiHelpersServiceProvider"
+            ],
+            "aliases": {
+                "LaravelApiHelpers": "Omaralalwi\\LaravelApiHelpers\\LaravelApiHelpersFacade"
+            }
+        }
+    }
+}
