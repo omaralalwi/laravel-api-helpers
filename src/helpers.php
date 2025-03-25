@@ -35,14 +35,14 @@ if (!function_exists('is_api_v')) {
      * Compares the version extracted from the request (via path or header)
      * to the provided version number.
      *
-     * **Note:** This function calls `get_api_version()`, which should be updated to `get_api_v()` if intended.
+     * **Note:** This function calls `get_api_v()`, which should be updated to `get_api_v()` if intended.
      *
      * @param int $version The version number to check against.
      * @return bool True if the current API version matches the specified version; otherwise, false.
      */
     function is_api_v($version)
     {
-        return get_api_version() === (int) $version;
+        return get_api_v() === (int) $version;
     }
 }
 
@@ -52,14 +52,14 @@ if (!function_exists('api_v_at_least')) {
      *
      * Compares the API version from the request with the provided minimum version.
      *
-     * **Note:** This function calls `get_api_version()`, which should be updated to `get_api_v()` if intended.
+     * **Note:** This function calls `get_api_v()`, which should be updated to `get_api_v()` if intended.
      *
      * @param int $version The minimum version to check against.
      * @return bool True if the current API version is greater than or equal to the specified version; otherwise, false.
      */
     function api_v_at_least($version)
     {
-        $currentVersion = get_api_version();
+        $currentVersion = get_api_v();
 
         if ($currentVersion === null) {
             return false;
