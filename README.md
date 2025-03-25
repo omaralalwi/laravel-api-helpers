@@ -200,6 +200,8 @@ $apiUser = get_api_user();
 echo $apiUser ? "API User: {$apiUser->name}" : "No API user authenticated.";
 ```
 
+---
+
 ### Comprehensive Example For All Functions
 
 copy & past following block, then see outputs in log file
